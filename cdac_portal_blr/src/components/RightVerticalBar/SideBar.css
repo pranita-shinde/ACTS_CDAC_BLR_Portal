@@ -1,0 +1,106 @@
+.sidebar-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.toggle-button {
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 1000;
+    display: none;
+    /* Hidden by default, shown on smaller screens */
+}
+
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background-color: #0056b3;
+    padding: 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: transform 0.3s ease-in-out;
+    transform: translateX(-100%);
+}
+
+.sidebar.open {
+    transform: translateX(0);
+}
+
+.avatar-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.avatar {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 15px;
+}
+
+.user-name {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.menu-section {
+    width: 100%;
+}
+
+.menu-item {
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #003a75;
+    border-radius: 8px;
+    text-align: center;
+    cursor: pointer;
+    color: white;
+    /* Default text color */
+}
+
+.menu-item:hover {
+    background-color: #004a9f;
+    /* Adjust for hover effect */
+    color: gold;
+    /* Text color changes to golden on hover */
+}
+
+@media (min-width: 768px) {
+    .sidebar {
+        transform: translateX(0);
+        /* Sidebar visible by default on larger screens */
+        position: static;
+        width: 250px;
+    }
+
+    .toggle-button {
+        display: none;
+        /* Hidden on larger screens */
+    }
+}
+
+@media (max-width: 767px) {
+    .toggle-button {
+        display: block;
+        /* Show toggle button on smaller screens */
+    }
+
+    .sidebar.open {
+        transform: translateX(0);
+    }
+}

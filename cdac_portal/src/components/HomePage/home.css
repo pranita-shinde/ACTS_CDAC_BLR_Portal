@@ -1,0 +1,66 @@
+/* Life at C-DAC Section */
+.life-at-cdac {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #e9ecef;
+  border-radius: 10px;
+  margin-top: 40px;
+}
+
+.life-at-cdac h2 {
+  color: #0056b3;
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+.video-container {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.video-container iframe {
+  border-radius: 10px;
+  width: 100%;
+  max-width: 900px;
+  /* Increased max width */
+  height: auto;
+  aspect-ratio: 16/9;
+  /* Ensure the video maintains the correct aspect ratio */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+
+  .highlights h2,
+  .life-at-cdac h2 {
+    font-size: 1.5rem;
+  }
+
+  .card-title {
+    font-size: 1rem;
+  }
+
+  .card-text {
+    font-size: 0.85rem;
+  }
+
+  .video-container iframe {
+    max-width: 100%;
+    /* Ensure it fits within the screen width */
+    height: auto;
+  }
+}
+
+@media (max-width: 576px) {
+
+  .highlights-description,
+  .card-text {
+    font-size: 0.85rem;
+  }
+
+  .card-title {
+    font-size: 0.9rem;
+  }
+}

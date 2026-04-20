@@ -1,0 +1,109 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #003366;
+
+  padding: -1px 20px;
+  opacity: 100%;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  height: 95px;
+}
+
+.brand-name {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.brand-logo {
+  height: 70px;
+  width: auto;
+  margin-right: 10px;
+}
+
+.hamburger {
+  display: none;
+  font-size: 28px;
+  color: #ffffff;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding-right: 20px;
+}
+
+.nav-links li {
+  display: inline;
+}
+
+.nav-links a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.nav-links a:hover {
+  color: #ffdf00;
+}
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    gap: 6px;
+    padding: 0;
+    background-color: #003366;
+  }
+
+  .nav-links.open {
+    display: flex;
+    position: absolute;
+    top: 45px;
+    /* Adjust this based on the height of your navbar */
+    left: 0;
+    width: 100%;
+  }
+
+  .nav-links li {
+    width: 100%;
+    text-align: left;
+  }
+
+  .nav-links a {
+    display: block;
+    padding: 10px;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .brand-name {
+    font-size: 16px;
+  }
+
+  .nav-links a {
+    font-size: 14px;
+    padding: 8px;
+  }
+}

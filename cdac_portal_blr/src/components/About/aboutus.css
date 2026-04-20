@@ -1,0 +1,132 @@
+/* aboutus.css */
+
+
+
+/* Container for the main content */
+div {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.container, .container-fluid, .container-xxl, .container-xl, .container-lg, .container-md, .container-sm {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    width: 100%;
+    padding-top: 90px;
+    padding-right: calc(var(--bs-gutter-x)* 0.5);
+    padding-left: calc(var(--bs-gutter-x)* 0.5);
+    margin-right: auto;
+    margin-left: auto;
+}
+
+header h1 {
+    font-size: 36px;
+    margin: 0;
+}
+
+header h2 {
+    font-size: 24px;
+    margin: 10px 0 0;
+}
+
+/* Header for major sections */
+h2 {
+    font-size: 18pt;
+    color: #003366;
+    padding-top: 90px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #003366;
+    padding-bottom: 5px;
+}
+
+/* Styling for the title */
+h1, h2 {
+    color: #003366;
+    
+    margin-top: 0;
+}
+
+/* Paragraph styling */
+p {
+    margin: 14pt 0;
+    font-size: 14pt;
+    color: #333;
+}
+
+/* Styling for bold text */
+span[style*="font-weight:bold"] {
+    font-weight: bold;
+    color: #003366;
+}
+
+/* Styling for links */
+a {
+    color: #0066cc;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #004080;
+    text-decoration: none;
+}
+
+/* Image styling */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Specific styling for sections */
+#aboutus {
+    background: linear-gradient(to right, #d7e8fa, #ffffff);
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+#aboutus p {
+    font-size: 14pt;
+    color: #333;
+}
+
+#aboutus span {
+    font-weight: bold;
+    font-size: 18pt;
+}
+
+/* Introduction section styling */
+#introduction {
+    margin-top: 20px;
+}
+
+#introduction p {
+    font-size: 14pt;
+}
+
+/* Vision and Mission section styling */
+#vision,
+#mission {
+    margin-top: 30px;
+}
+
+#vision h2,
+#mission h2 {
+    color: #003366;
+    font-size: 18pt;
+}
+
+#vision p,
+#mission p {
+    font-size: 14pt;
+}
+
+/* Contact Us section styling */
+#contact {
+    margin-top: 30px;
+}
+
+#contact p {
+    font-size: 14pt;
+}
