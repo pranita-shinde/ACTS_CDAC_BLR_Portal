@@ -33,17 +33,16 @@ ACTS_CDAC_BLR_Portal/
 
 
 🔥 Key Features
-User Authentication (Login Module)
-Role-based access handling
-Student management system
-Clean and scalable backend architecture
-Custom exception handling:
-Duplicate entry handling
-User not found scenarios
+•	User Authentication (Login Module)
+•	Role-based access handling
+•	Student management system
+•	Clean and scalable backend architecture
+•	Custom exception handling:
+	Duplicate entry handling
+	User not found scenarios
 
 
 ⚙️ Backend Architecture Flow
-
 Client Request
      ↓
 Controller → Service → Repository → Database
@@ -65,14 +64,5 @@ cd frontend
 npm install
 npm start
 
-
-📌 Future Enhancements
-JWT Authentication
-Admin dashboard analytics
-Deployment (AWS / Docker)
-API documentation (Swagger)
-
-
 👩‍💻 Author
 Pranita Shinde
-Backend / Full Stack Developer
