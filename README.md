@@ -1,7 +1,6 @@
 🚀 ACTS CDAC Bangalore Portal
 A full-stack web application designed to manage academic and administrative workflows for ACTS CDAC Bangalore. This project demonstrates a scalable architecture with a structured backend and modular frontend.
 
-🧩 Tech Stack
 💻 Frontend
 React.js
 HTML, CSS, JavaScript
