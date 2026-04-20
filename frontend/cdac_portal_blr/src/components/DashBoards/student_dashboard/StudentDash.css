@@ -1,0 +1,100 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Light background for better contrast */
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #007BFF; /* Blue background */
+    padding: 10px 20px;
+    color: white;
+}
+
+.navbar img {
+    height: 50px; /* Logo height */
+}
+
+.avatar {
+    display: flex;
+    align-items: center;
+}
+
+.avatar img {
+    border-radius: 50%;
+    margin-right: 10px; /* Space between avatar and dropdown */
+}
+
+.dropdown {
+    display: none; /* Hidden by default */
+    position: absolute;
+    right: 20px;
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+}
+
+.dropdown a:hover {
+    background-color: #f0f0f0; /* Hover effect */
+}
+
+.avatar:hover .dropdown {
+    display: block; /* Show dropdown on hover */
+}
+
+.dashboard {
+    display: flex;
+    padding: 20px;
+    gap: 20px; /* Space between sections */
+}
+
+.student-info {
+    flex: 1; /* Take up one part of the flex container */
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Centering content */
+}
+
+.student-info img {
+    width: 100px; /* Student image width */
+    height: auto;
+    border-radius: 50%; /* Circular image */
+    margin-bottom: 10px; /* Space below image */
+}
+
+.student-details {
+    flex: 2; /* Take up two parts of the flex container */
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.student-details div {
+    margin: 10px 0; /* Space between details */
+    font-size: 16px; /* Font size for details */
+    color: #333; /* Dark color for text */
+}
+
+/* Optional styles for responsiveness */
+@media (max-width: 768px) {
+    .dashboard {
+        flex-direction: column; /* Stack on smaller screens */
+    }
+
+    .student-info,
+    .student-details {
+        width: 100%; /* Full width on small screens */
+    }
+}
